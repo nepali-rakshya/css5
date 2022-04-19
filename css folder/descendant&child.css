@@ -1,0 +1,27 @@
+/* 
+Descendant and Child Combinators
+
+--------Children can be descendant but parent cannot
+
+
+      1. ">" 
+      - it means only the children of this element
+      - you can also use classes or ids.
+        For example: div > h1
+*/
+
+div h1 {
+  color: red;
+}
+
+div > h1 {
+  color: blue;
+}
+
+ul > li {
+  color: pink;
+}
+
+.header > h1 {
+  background: yellowgreen;
+}
