@@ -1,0 +1,58 @@
+/* 
+IT'S even POSSIBLE without pseudo elements ::after and ::before but
+it's advised to do it using these elements rather than manually adding
+them as for the later part it becomes hectic to add other beautiful css
+into them.
+*/
+
+div h3 {
+  color: red;
+}
+
+div.header > h3 {
+  color: blue;
+}
+
+div.header > h3 {
+  color: black;
+  background-color: red;
+}
+
+div.pos {
+  position: absolute;
+  border: 2px solid rgb(249, 252, 250);
+  width: 12%;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+p {
+  position: relative;
+  margin: 0;
+  display: inline-block;
+}
+
+div.pos2 {
+  position: absolute;
+  border: 2px solid cadetblue;
+  width: 12%;
+  height: 10%;
+  top: 18.6%;
+  padding: 3px;
+  padding-right: 9px;
+  left: 1px;
+  z-index: -3;
+}
+
+div.pos3 {
+  position: absolute;
+  background: cadetblue;
+  width: 12%;
+  height: 10%;
+  top: 90px;
+  padding: 1px;
+  z-index: -2;
+  padding-right: 9px;
+  left: 4px;
+}
