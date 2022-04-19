@@ -1,0 +1,42 @@
+/* 
+transform: translate(), scale(), rotate(), skew()
+
+translate () 
+
+---------- 1. It operates in 3 directions "x,y 
+and z". 
+---------- 2. you can use pixel or % vales.
+---------- 3. while you use % value it is going to
+be the multiplication of the width
+For example; 
+
+            width = 150px;
+            and 
+            if 
+            transform = translateX(50%)
+            Now, its going to move 75px to the x axis. 
+            How? 
+----------> 150px * 50%
+----------= (150 * 50) / 100
+----------=  75px
+*/
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.one {
+  background: red;
+  transform: translate(20px, 20px);
+}
+
+.two {
+  background: green;
+  transform: translateY(20px);
+}
+.three {
+  background: blue;
+  transform: translateX(-20px);
+}
