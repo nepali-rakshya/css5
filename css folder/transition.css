@@ -1,0 +1,50 @@
+/* 
+transition: change over time
+transition-property:
+transition-duration:
+transition-delay: delaying transition means you after you have 
+hovered into that element you would have to wait for some seconds
+before any of the effect starts taking place.
+
+transition shorthand
+
+transition: (property) (duration) (delay/this is optional)
+
+Now, if you want all the properties to have same duration or delay then
+you can use another shorthand 
+i.e., 
+
+transition: all (duration) (delay/optional);
+*/
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+/* div:hover {
+  background: black;
+} */
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: green;
+}
+
+.three {
+  background-color: blue;
+  /* transition-property: background, border-radius;
+  transition-duration: 5s, 3s;
+  transition-delay: 2s; */
+  transition: background 4s, border-radius 4s;
+  transition: all 5s;
+}
+
+.three:hover {
+  border-radius: 50%;
+  background: pink;
+}
