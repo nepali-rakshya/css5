@@ -1,0 +1,29 @@
+/* 
+transform: rotate()
+
+shorthand rule for rotate 
+rotate() === means rotateZ
+it's same
+
+it's diffcult to see the rotation in x and y axis
+
+*/
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.one {
+  background-color: red;
+  transform: rotate(45deg);
+}
+.two {
+  background-color: green;
+  transform: rotateZ(45deg);
+}
+.three {
+  background-color: blue;
+  transform: rotateX(20deg);
+}
