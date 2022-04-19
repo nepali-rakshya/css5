@@ -1,0 +1,51 @@
+/*
+
+-----We can use :hover for precisely anything, but for link there are
+many other options other than only :hover.
+
+
+:hover   ====== When you take the mouse to hover around that link.
+
+:link    ====== It means all the links present there must change acc 
+to the property provided.
+
+:visited ====== If the link is already visited.
+
+:active  ====== while clicking what should happen.
+
+
+*/
+
+/* p:hover {
+  color: red;
+}
+
+.header:hover {
+  background: blue;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+} */
+/* 
+a:link {
+  color: brown;
+}
+
+a:visited {
+  color: red;
+}
+*/
+a:hover {
+  color: darkblue;
+}
+/*
+a:active {
+  background: pink;
+} */
+
+a.here:hover {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2em;
+}
