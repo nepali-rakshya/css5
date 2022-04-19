@@ -1,0 +1,27 @@
+/* 
+transform: skew()
+
+lol!
+
+skew() is literally slanting.
+
+*/
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.one {
+  background-color: red;
+  transform: skewX(20deg);
+}
+.two {
+  background-color: green;
+  transform: skewX(-20deg);
+}
+.three {
+  background-color: blue;
+  transform: skewY(0deg);
+}
