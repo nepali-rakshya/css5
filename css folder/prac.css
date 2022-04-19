@@ -12,7 +12,7 @@ pseudo elements
 }
 
 .header h1 {
-  width: 28%;
+  width: 20vw;
   margin: auto;
   padding: 5px;
   text-align: center;
@@ -62,7 +62,7 @@ div h2 {
   letter-spacing: 5px;
 }
 
-/* square */
+/********************* square */
 
 div#square-shape {
   width: 150px;
@@ -99,17 +99,115 @@ div.square {
 
 div#square-shape {
   transform: translate(-10px, 3px);
-  transform: scale(0.5, 0.5);
-  transform: rotate(35deg);
   transform: skewX(20deg);
+  transform: scale(0.5, 0.5);
 }
 
 div#square-shape:hover {
   background: rgba(255, 0, 0, 0.699);
-  border-radius: 50%;
+  transform: rotate(35deg);
 }
 
 div#square-shape {
-  transition: background 4s, border-radius 4s;
+  transition: all 5s;
+}
+
+/*************** rectangle */
+
+div#rec-shape {
+  width: 150px;
+  height: 150px;
+  background: lightsteelblue;
+  border: 2px solid red;
+  display: inline-block;
+}
+
+div.rectangle {
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+}
+.rectangle a:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.rectangle a:link {
+  font-weight: bold;
+  color: darkslategray;
+  font-size: 1.5em;
+}
+
+.rectangle a:active {
+  color: darkred;
+}
+
+.rectangle a:visited {
+  background: pink;
+}
+
+div#rec-shape {
+  transform: translate(-10px, 3px);
+  transform: rotate(35deg);
+  transform: scale(2, 1);
+}
+
+div#rec-shape:hover {
+  background: rgba(255, 0, 0, 0.699);
+  transform: skewX(10deg);
+}
+
+div#rec-shape {
+  transition: all 5s;
+}
+
+/******************circle */
+
+div#circle-shape {
+  width: 150px;
+  height: 150px;
+  background: lightsteelblue;
+  border: 2px solid red;
+  display: inline-block;
+}
+
+div.circle {
+  width: 200px;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+}
+.circle a:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.circle a:link {
+  font-weight: bold;
+  color: darkslategray;
+  font-size: 1.5em;
+}
+
+.circle a:active {
+  color: darkred;
+}
+
+.rectangle a:visited {
+  background: pink;
+}
+
+div#circle-shape {
+  transform: translate(-10px, 3px);
+  transform: rotate(35deg);
+  transform: scale(0.5, 0.5);
+}
+
+div#circle-shape:hover {
+  background: rgba(255, 0, 0, 0.699);
+  border-radius: 50%;
+}
+
+div#circle-shape {
   transition: all 5s;
 }
