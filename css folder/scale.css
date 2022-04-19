@@ -1,0 +1,26 @@
+/* 
+transform: scale()
+
+
+*/
+
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.one {
+  background-color: red;
+  transform: scaleX(0.5);
+}
+.two {
+  background-color: green;
+  display: block;
+  transform: scaleY(0.2);
+}
+.three {
+  background-color: blue;
+  transform: scale(0.5, 0.5);
+  margin-top: 5px;
+}
