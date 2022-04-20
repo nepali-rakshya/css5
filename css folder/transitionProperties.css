@@ -1,0 +1,39 @@
+/* 
+How the transition takes place 
+before we know that the shorthand of the transition property
+included ==== transition: all time delay
+        OR    transition: property time delay, property time delay;
+
+Now there is another property called as 
+
+************* transition-timing-function: ****************
+and on shorthand it is placed in between the time and delay
+
+transition: all time (here) delay;
+
+ease = default
+ease = slow start, fast , slow end
+linear = same speed start to end
+ease-in = slow start
+ease-out = slow end
+ease-in-out = slow start, fast, slow end
+
+*/
+
+div {
+  width: 100px;
+  height: 100px;
+  background: burlywood;
+  color: black;
+  margin: 15px;
+  transition: all 1s;
+}
+
+div:hover {
+  transform: translate(100px, 0);
+  transform: scale(1, 0.5);
+}
+
+.ease {
+  transition: all 5s ease-in-out;
+}
