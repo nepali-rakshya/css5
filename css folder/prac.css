@@ -78,23 +78,21 @@ div.square {
   text-align: center;
   padding: 30px;
 }
-.square a:hover {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 .square a:link {
   font-weight: bold;
   color: darkslategray;
   font-size: 1.5em;
 }
+.square a:visited {
+  background: pink;
+}
+.square a:hover {
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
 .square a:active {
   color: darkred;
-}
-
-.square a:visited {
-  background: pink;
 }
 
 div#square-shape {
