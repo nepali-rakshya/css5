@@ -13,7 +13,7 @@ Some other selectors that will come in handy are:-
 
 ****************** ATTRIBUE AND nth CHILD PSEUDO SELECTORS *********************
 
-*******************          ATTRIBUTES               ************************
+======================    ATTRIBUTES     =====================
 
 
 
@@ -41,7 +41,7 @@ input[type='emai']{
 }
 
 
-*************************** nth CHILD SELECTORS ***************************
+======================  nth CHILD SELECTORS ====================== 
 
 li:nth-child(3) {
 
@@ -62,6 +62,21 @@ now, you can also do odd even thing
 li:nth-child(odd)
 li:nth-child(even)
 
+
+====================== OHTER SELECTORS ==================================
+
+div p {
+    it means all the elements inside div which includes p
+}
+
+div > p {
+    it means direct child of the div i.e., p must only get the styles
+}
+
+div + p {
+    it means the sibling of the div ....if p is the direct sibling of the div
+    then it would be styled.
+}
 
 
 *********************** BEST TECHNIQUES FOR DESIGING A BG IMAGE FOR YOUR WEBSITE *********************
