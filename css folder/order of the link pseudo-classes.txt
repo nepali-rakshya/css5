@@ -1,0 +1,70 @@
+It is useful to know that most of the link pseudo-classes should
+be declared in a specific order. The order is:
+
+1. Link 
+2. Visited
+3. Hover 
+4. Active
+
+
+
+Some other selectors that will come in handy are:-
+
+
+****************** ATTRIBUE AND nth CHILD PSEUDO SELECTORS *********************
+
+*******************          ATTRIBUTES               ************************
+
+
+
+input[type='text']{
+
+}
+
+----------- This is for styling the "type" of any input
+
+a[target]{
+
+}
+
+----------- This can also be used for trying to select a 
+specific anchor tag with specific attributes
+
+a[target='_blank']{
+
+}
+
+------------- This is more specific among the anchor tags
+
+input[type='emai']{
+
+}
+
+
+*************************** nth CHILD SELECTORS ***************************
+
+li:nth-child(3) {
+
+}
+
+li:nth-child(10){
+
+}
+
+now if you want to apply css in every 2 elements in the list
+
+li:nth-child(2n+0){
+
+}
+
+now, you can also do odd even thing
+
+li:nth-child(odd)
+li:nth-child(even)
+
+
+
+*********************** BEST TECHNIQUES FOR DESIGING A BG IMAGE FOR YOUR WEBSITE *********************
+
+USE ::before and ::after pseudo selectors for the benefit of adding an image into 
+the background and decreasing its opacity. 
