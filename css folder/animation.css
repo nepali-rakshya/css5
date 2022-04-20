@@ -1,0 +1,53 @@
+/* 
+Transitioin 0 = 100%
+Animation 0 1% 2% ..... 100%
+
+Incase of animate we can change the values and properites as much
+as we want in every percentage.
+
+The short hand is 
+
+=========== animation: (name) (duration) (iteration);
+*/
+div {
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+  color: white;
+}
+
+.transition {
+  background: red;
+  transition: all 2s linear;
+}
+
+.transition:hover {
+  background: yellow;
+  transform: translate(100px, 0);
+}
+
+.animation {
+  background: burlywood;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-iteration-count: 2;
+  animation: move 5s infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(20px, 0);
+  }
+  50% {
+    transform: translate(100px, 0);
+    background: red;
+  }
+  75% {
+    transform: translate(-100px, 0);
+    background: yellowgreen;
+  }
+  100% {
+    transform: translate(100px, 0);
+    background: green;
+  }
+}
