@@ -1,0 +1,41 @@
+/* 
+animation-fill-mode: What values are applied by the animation outside
+the time it is executing
+
+
+what this property means
+
+------------> It means it would stop at any property the animation had when
+it was in 100%
+*/
+
+div {
+  width: 200px;
+  height: 100px;
+  color: white;
+  margin: 10px;
+}
+
+.animation {
+  background: blue;
+  animation: move 5s 2;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    transform: translateX(200px);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateX(-100px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.5;
+  }
+}
